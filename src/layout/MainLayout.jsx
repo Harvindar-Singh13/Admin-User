@@ -6,22 +6,33 @@ import Topbar from './Topbar'
 
 
 const MainLayout = () => {
-  const[showSidebar, setSidebar] = useState(false)
+  const[showSidebar, setShowSidebar] = useState(false)
   return (
     <div
-      className="min-h-screen bg-bg"
-      // Mobile Bar
+      className="min-h-screen bg-bg">
+        {/* Mobile layout */}
+        {showSidebar && (
+          <div className="fixed inset-0 z-40 bg-black/50 md:hidden" onClick={()=>setShowSidebar(false)}>
 
-    >
+          </div>
+        )}
+
+
       {/* Sidebar */}
-      <Sidebar />
+      <Sidebar
+        showSidebar={showSidebar}
+        setShowSidebar= {setShowSidebar}
+       />
 
       {/* Right Area */}
 
 
-      <div className='ml-64 min-h-screen'>
+      <div className='md:ml-64 min-h-screen'>
         {/* Topbar */}
-        <Topbar />
+        <Topbar 
+        showSidebar={showSidebar}
+        setShowSidebar= {setShowSidebar}
+        />
 
         <main className="p-8">
           <Outlet />
