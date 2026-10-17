@@ -76,8 +76,8 @@ const Dashboard = () => {
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5'>
         {statsItems.map((item, idx) =>{
           <div key={idx}>
-            
-          </div>
+
+          </div> 
         })}
 
       </div>
