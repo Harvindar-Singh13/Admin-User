@@ -9,7 +9,7 @@ const MainLayout = () => {
   const[showSidebar, setShowSidebar] = useState(false)
   return (
     <div
-      className="min-h-screen bg-bg">
+      className="min-h-screen bg-gray-100">
         {/* Mobile layout */}
         {showSidebar && (
           <div className="fixed inset-0 z-40 bg-black/50 md:hidden" onClick={()=>setShowSidebar(false)}>
@@ -25,8 +25,6 @@ const MainLayout = () => {
        />
 
       {/* Right Area */}
-
-
       <div className='md:ml-64 min-h-screen'>
         {/* Topbar */}
         <Topbar 
