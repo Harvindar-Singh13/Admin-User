@@ -12,7 +12,7 @@ const Products = () => {
       const data = await api.getProducts();
       setProductData(data);
     } catch (error) {
-      console.log("Dashboard loading failed:", error);
+      console.log("Products loading failed:", error);
     } finally {
       setLoading(false);
     }

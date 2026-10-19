@@ -1,4 +1,11 @@
-import { LayoutDashboard, Package, Settings, ShoppingCart, User, Users } from "lucide-react";
+import {
+  LayoutDashboard,
+  Package,
+  Settings,
+  ShoppingCart,
+  User,
+  Users,
+} from "lucide-react";
 
 export const navigation = [
   {
@@ -7,29 +14,29 @@ export const navigation = [
       {
         label: "Dashboard",
         path: "/dashboard",
-        icon: LayoutDashboard
+        icon: LayoutDashboard,
       },
       {
         label: "Users",
         path: "/users",
-        icon: Users
+        icon: Users,
       },
       {
         label: "Products",
         path: "/products",
-        icon: Package
+        icon: Package,
       },
       {
         label: "Orders",
         path: "/orders",
-        icon: ShoppingCart
+        icon: ShoppingCart,
       },
       {
         label: "Settings",
         path: "/settings",
-        icon: Settings
+        icon: Settings,
       },
-    ]
+    ],
   },
   {
     title: "Account",
@@ -37,12 +44,11 @@ export const navigation = [
       {
         label: "Profile",
         path: "/profile",
-        icon: User
+        icon: User,
       },
-    ]
-  }
-]
-
+    ],
+  },
+];
 
 export const pageTitles = {
   "/dashboard": "Dashboard",
@@ -51,5 +57,4 @@ export const pageTitles = {
   "/orders": "Orders",
   "/settings": "Settings",
   "/profile": "Profile",
-}
-
+};

@@ -58,8 +58,6 @@ export const dashboardData = {
   },
 };
 
-
-
 export const usersData = {
   items: [
     {

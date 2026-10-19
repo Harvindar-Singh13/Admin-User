@@ -13,7 +13,7 @@ const Orders = () => {
       const data = await api.getOrders();
       setOrderData(data);
     } catch (error) {
-      console.log("Dashboard loading failed:", error);
+      console.log("Orders loading failed:", error);
     } finally {
       setLoading(false);
     }
