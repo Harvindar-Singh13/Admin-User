@@ -106,7 +106,7 @@ const Settings = () => {
             </label>
             <input
               type="text"
-              name="SiteName"
+              name="siteName"
               value={formData.siteName}
               onChange={handleChange}
               className="w-full px-4 py-2.5 rounded-lg border border-gray-200 text-sm outline-none focus:border-[#FF5C23] focus:ring-2 focus:ring-[#FF5C23]"
